@@ -1,0 +1,18 @@
+/* je suis un commentaire */
+p {
+    background-color: forestgreen;
+    font-size: 130%;
+} /* select all <p> */
+
+#p2{
+    background-color: black;
+} /* select by id */
+
+.first{
+    font-size: 200%;
+    font-family: Arial;
+} /* select by class */
+
+#intro .first {
+    background-color: aquamarine;
+} /* select by class and id */

@@ -1,0 +1,198 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>First page </title>
+	</head>
+	<body>
+        <header style="background-color: aqua">
+            <h1 align="center"> This is a centered headline </h1>
+        </header>
+
+		<hr/>
+
+
+		      <!-- Usage of text's tags -->
+		<h5><span style="color: red"> this a span h5 in red </span></h5>
+		<p> this is  <br/> two lines of text </p>
+		<p class="quote"> new paragraph </p>
+        <div style="background-color: greenyellow; color: white;padding: 5px;">
+            <p>Important shit</p>
+        </div>
+		<p><b> blod text </b></p>
+		<p><i> italic text </i></p>
+		<p><big> big text </big></p>
+		<p><small> small text </small></p>
+		<p><strong> strong text </strong></p>
+		<p><sub> subscripted text </sub></p>
+		<p><sup> superscripted text </sup></p>
+		<p><ins> inserted text </ins></p>
+        <p><del> Deleted text </del></p>
+		<hr width="50%" align="left"/>
+
+		      <!-- Usage of image's/link's tags -->
+		<img src="POLogne.jpg" height="50%" alt="Img not found" border="5px"/>
+		<p> this is a bonnasse whaou </p>
+		<a href="https://www.google.fr/" target="_blank"> Go to google ?</a>
+
+                <!-- Usage of lists -->
+        <ol>
+            <li>Red</li>
+            <li>Blue</li>
+            <li>Green</li>
+        </ol>
+
+                <!-- Usage of tables -->
+        <table align="center" border="3px">
+            <tr>
+                <th>Color 1</th>
+                <th>Color 2</th>
+                <th>Color 3</th>
+            </tr>
+            <tr>
+                <td bgcolor="red">Red</td>
+                <td>Blue</td>
+                <td>Green</td>
+            </tr>
+                <td><br /></td>
+                <td colspan="2">Orange</td>
+            <tr>
+            </tr>
+        </table>
+
+                <!-- Usage of forms -->
+        <form>
+            <input type="text" name="username" /><br />
+            <input type="password" name="password" />
+        </form>
+        <form action="http://www.sololearn.com" method="get">
+            <input type="submit" value="go to sololearn with a button"/> <br/>
+        </form>
+        <form>
+            <input type="button" name="button"/><br/>
+        </form>
+        <form>
+            <input type="radio" name="gender" value="Male"/> Male <br/>
+            <input type="radio" name="gender" value="Female"/>Female <br/>
+        </form>
+        <form>
+            <input type="checkbox" name="gender" value="Male"/> Male <br/>
+            <input type="checkbox" name="gender" value="Female"/>Female <br/>
+        </form>
+        <h1><span style="color: #000000">Contact me</span></h1>
+        <form>
+            <input type="email" name="email"/> <br/>
+            <textarea name="message"></textarea> <br/>
+            <input type="submit" value="SEND" class="submit"/>
+        </form>
+        <div class="section">
+            <h1><span style="background-color: red">My Media</span></h1>
+            <iframe height="150" width="300" src="https://www.youtube.com/embed/Q6_5InVJZ88" allowfullscreen></iframe>
+        </div>
+        <!-- HTML5 -->
+        <form autocomplete="off">
+            <label for="email">Your email</label>
+            <input type="text" name="email" placeholder="email@exp.com" required>
+            <!-- can add 'autofocus' -->
+            <input type="submit" value="Submit">
+        </form>
+        <form>
+            <input id="mysearch" name="searchitem" type="search" list="colors" />
+            <datalist id="colors">
+                <option value="Red">
+                <option value="Green">
+                <option value="Yellow">
+            </datalist>
+        </form>
+
+        <footer>
+            <p>This is a footer</p>
+        </footer>
+
+				<!-- Usage of nav -->
+
+        <nav>
+            <p>This is a nav section</p>
+            <ol>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="About.html">Abou (see drag and drop)</a></li>
+            </ol>
+        </nav>
+        
+                <!-- Usage of article -->
+        
+        <article>
+            <h1>Artcile Title (same as div)</h1>
+            <section>
+                <h2>This is section title</h2>
+                <p>This is a section</p>
+            </section>
+            <aside>
+                <p>This is an aside</p>
+            </aside>
+            <p>article content</p>
+        </article>
+        
+                <!-- Usage of audio/video -->
+        
+        <audio src="Dancing Naked.mp3" >
+        </audio>
+        <audio loop>
+            <source src="Dancing Naked.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+        </audio>
+        <video autoplay loop>
+            <source src="Dancing Naked.mp4" type="audio/mp4">
+            <source src="audio.ogg" type="audio/ogg">
+        </video>
+        
+                <!-- Usage of progress -->
+        
+        <p align="center">this is a progress bar</p>
+        <progress min="0" max="100" value="65">
+        </progress>
+        
+                <!-- Usage of Web Storage/Geoloc -->
+        
+        <script>
+            localStorage.setItem("key1","value1")
+            alert(localStorage.getItem("key1"))
+            navigator.geolocalisation.getCurrentPosition()
+        </script>
+        <!--
+        also : .removeItems("key1") and .clear()
+        2 type Geodetic (latitude...) and Civic (adress...) -->
+        
+                <!-- draggable elements -->
+        
+        <img height="20%" src="Capture.PNG" draggable="true"> <!-- any element can be draggable then js to handle the grab settings see in About.html-->
+        
+                <!-- Usage of SVG -->
+        <!-- img can be .svg -->
+        <svg width="200" height="200">
+            <circle cx="80" cy="80" r="50" fill="black" >
+                <animate attributeName ="x" from="0" to="200" dur="3s"/>
+            </circle>
+            <rect width="200" height="100" x="20" y="80" fill="green" />
+            <line x1="12" y1="10" x2="400" y2="800" style="stroke:black" />
+        </svg>
+                <!-- Usage of Canvas -->
+        <canvas id="canvas1" width="400" height="400">
+        </canvas> 
+        <script>
+            var canvas = document.getElementById('canvas1');
+            ctx =canvas.getContext('2d');
+            ctx.font="bold 22px Tahoma";
+            ctx.textAlign="start";
+            ctx.fillText("start", 10, 30);
+            ctx.translate(100, 150);
+            ctx.fillText("after translate", 0, 0);
+            ctx.rotate(1);
+            ctx.fillText("after rotate", 0, 0);
+            ctx.scale(1.5, 4);
+            ctx.fillText("after scale", 0,20);
+        </script>
+        
+	</body>
+</html>

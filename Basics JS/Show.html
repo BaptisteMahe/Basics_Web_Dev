@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title id="title">Show JS Script</title>
+    </head>
+    <body onload="dosmth()">
+        
+    <!-- to link main.js with this html -->
+        <form onsubmit="return validate()"> <!-- Validate have to return a boolean according to what you want to validate the form -->
+            <input type="text" id="name" onchange="change()"/>
+            <input type="submit" value="Submit"/>
+        </form>
+    <script>
+        function change(){
+            //some code
+        }
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+        
+        <!-- Usage of events -->
+        <button onclick="show()">Click me bro</button>
+        <script>
+            function show(){
+                alert("Hi bro, Thank you")
+            };
+        </script>
+    </body>
+</html>
